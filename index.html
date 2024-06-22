@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>FORMULARIO DE LOGIN</h1>
+    <div class="login-container">
+        
+        <form action="./procesar.php" method="POST">
+            <div id="errores" class="error"></div>
+            <label for="user" class="content">Usuario:</label>
+            <input type="text" name="user" id="user" placeholder="Usuario" pattern="[a-zA-Z]+" required ">
+            <br>
+
+            <label for="password" class="content">Ingresa la contraseña:</label>
+            <input type="password" name="password" id="password" placeholder="Contraseña" required ">
+            <br>
+
+            <label for="edad" class="content">Ingresa tu edad:</label>
+            <input type="number" name="edad" id="edad" placeholder="Edad" min="18" required>
+            <input type="submit" value="Ingresar">
+        </form>
+    </div>
+
+</body>
+</html>
